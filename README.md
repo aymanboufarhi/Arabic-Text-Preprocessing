@@ -1,16 +1,28 @@
 # Lab : Get familiar with Scraping and NLP Pipeline ( Arabic Text )
 
 ## Summary
- - [Introduction]()
- - [Data Acquisition]()
- - [Text Cleaning]()
- - [Text Preprocessing]()
- - [Synthesis]()
+ - [Introduction](## Introduction)
+ - [Data Acquisition](## Data Acquisition)
+ - [Text Cleaning](## Text Cleaning)
+ - [Text Preprocessing](## Text Preprocessing)
+ - [Synthesis](##Synthesis)
 
 ## Introduction
 In this lab, we delved into the realms of web scraping and Natural Language Processing (NLP) to extract insights from Arabic web sources. Leveraging tools such as Beautiful Soup, MongoDB, NLTK, and Farasa API, our objective was to scrape data, store it in a NoSQL database, and apply various NLP techniques for analysis. Through this report, we document our journey, challenges faced, and insights gained, contributing to the broader understanding of these powerful methodologies.
 
 ## Data Acquisition
+In this section, we acquired raw content from the website "mawdoo3.com" regarding general culture about Morocco. We used Python's requests library to fetch the HTML content, then parsed it using BeautifulSoup for readability. After establishing a connection to MongoDB Atlas, we stored the parsed HTML content along with the URL in a MongoDB collection named "web_data_collection." This step lays the groundwork for subsequent analysis and processing in our NLP pipeline.
+
+## Text Cleaning
+In the text cleaning process, we began by retrieving the raw data stored in MongoDB. After obtaining the HTML content, we used BeautifulSoup to parse the content and extract the text. Following this extraction, we implemented a cleaning function to remove HTML tags, non-Arabic characters, and extra spaces from the text. This function ensured that our data remained focused on the Arabic language, essential for subsequent NLP tasks.
+
+Next, we defined a function to extract and clean text from specific HTML tags such as headers (h1) and paragraphs (p). This function iterated through these tags, concatenated the text, and applied the previously defined cleaning procedure.
+
+Additionally, we included a step for correcting word spellings using a contextual corrector. However, in our case, since we extracted text from a professional website, we opted not to utilize this step, as the text is expected to have correct spelling.
+
+By executing these steps, we obtained a cleaned text corpus ready for further processing in our NLP pipeline.
+
+## Text Preprocessing
 In our comprehensive journey through text preprocessing, we embarked on a detailed exploration to refine raw Arabic text data, paving the way for sophisticated Natural Language Processing (NLP) endeavors. Our initial step involved ensuring uniformity in encoding through Unicode normalization, a critical process to address potential inconsistencies in text representation. Subsequently, we ventured into tokenization, a fundamental technique that involved breaking down the text into individual tokens, enabling granular analysis and feature extraction.
 
 Delving deeper, we meticulously curated the text by filtering out common stop words using NLTK's Arabic corpus, thereby streamlining our focus towards the essence of the content. Stemming and lemmatization emerged as pivotal stages, wherein we meticulously investigated various algorithms such as ISRIStemmer, SnowballStemmer, and ARLSTem, alongside leveraging the advanced lemmatization capabilities offered by the Farasa API. This comparative analysis allowed us to grasp the subtle trade-offs between morphological reduction and semantic fidelity, empowering us to make informed decisions aligned with our specific NLP objectives, In our comprehensive journey through text preprocessing, we encountered real-world examples that underscored the importance of lemmatization and stemming in refining Arabic text data. For instance, when exploring lemmatization, we utilized the Farasa API to accurately map words to their base forms. This was exemplified when the word "والبرتغال" (meaning 'and Portugal') was transformed into its base form "برتغال," preserving semantic integrity. Similarly, the word "إسبانيا" (meaning 'Spain') retained its original form, showcasing the Farasa API's proficiency in maintaining semantic fidelity.
