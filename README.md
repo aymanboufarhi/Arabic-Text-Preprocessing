@@ -1,5 +1,7 @@
 # Lab : Get familiar with Scraping and NLP Pipeline ( Arabic Text )
 
+Tools : Google colab, github, NLTK, Farasa API
+
 ## Summary
  - [Introduction](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#introduction)
  - [Data Acquisition](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#data-acquisition)
