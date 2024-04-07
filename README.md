@@ -1,10 +1,10 @@
 # Lab : Get familiar with Scraping and NLP Pipeline ( Arabic Text )
 
 ## Summary
- - [Introduction](## Introduction)
- - [Data Acquisition](## Data Acquisition)
- - [Text Cleaning](## Text Cleaning)
- - [Text Preprocessing](## Text Preprocessing)
+ - [Introduction](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#introduction)
+ - [Data Acquisition](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#data-acquisition)
+ - [Text Cleaning](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#text-cleaning)
+ - [Text Preprocessing](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#text-preprocessing)
  - [Synthesis](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#synthesis)
 
 ## Introduction
