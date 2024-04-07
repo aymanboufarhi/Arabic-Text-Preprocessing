@@ -5,7 +5,7 @@
  - [Data Acquisition](## Data Acquisition)
  - [Text Cleaning](## Text Cleaning)
  - [Text Preprocessing](## Text Preprocessing)
- - [Synthesis](##Synthesis)
+ - [Synthesis](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#synthesis)
 
 ## Introduction
 In this lab, we delved into the realms of web scraping and Natural Language Processing (NLP) to extract insights from Arabic web sources. Leveraging tools such as Beautiful Soup, MongoDB, NLTK, and Farasa API, our objective was to scrape data, store it in a NoSQL database, and apply various NLP techniques for analysis. Through this report, we document our journey, challenges faced, and insights gained, contributing to the broader understanding of these powerful methodologies.
