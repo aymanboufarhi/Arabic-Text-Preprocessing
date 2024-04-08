@@ -2,7 +2,7 @@
 
 Tools : Google colab, github, NLTK, Farasa API
 
-## Summary
+## Table of contents
  - [Introduction](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#introduction)
  - [Data Acquisition](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#data-acquisition)
  - [Text Cleaning](https://github.com/aymanboufarhi/Arabic-Text-Preprocessing?tab=readme-ov-file#text-cleaning)
